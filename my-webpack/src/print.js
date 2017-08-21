@@ -1,0 +1,1 @@
+export default prinMe=>consoe.log("台乾清");

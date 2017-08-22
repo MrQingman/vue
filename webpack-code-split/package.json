@@ -1,0 +1,22 @@
+{
+  "name": "webpack-code-split",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "jQuery": "^1.7.4",
+    "lodash": "^4.17.4",
+    "webpack": "^3.5.5"
+  },
+  "devDependencies": {
+    "less": "^2.7.2"
+  }
+}

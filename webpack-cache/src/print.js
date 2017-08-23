@@ -1,0 +1,1 @@
+exports.default = function print() { console.log("text") }

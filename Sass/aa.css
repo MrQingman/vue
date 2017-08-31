@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*嵌套规则以及父选择器&  8.31demo*/
+.aa p {
+  color: red;
+  display: flex;
+  transform: scale(45deg);
+  width: 100px;
+  height: 100px; }
+  .aa p.redbox {
+    background-color: #fff;
+    background: #000; }
+  body.box .aa p {
+    font-size: 10px; }
+
+/*属性嵌套*/
+.fonts {
+  font: 20px/24px;
+    font-family: '微软雅黑';
+    font-size: 30em;
+    font-weight: bold;
+  border: 2px;
+    border-color: red;
+    border-style: solid; }
+
+/*!将 ! 作为多行注释的第一个字符表示在压缩输出模式下保留这条注释并输出到 CSS 文件中，通常用于添加版权信息。*/
+/* 变量的用法 */
+.var {
+  width: 400px; }
+
+.test {
+  width: 400px; }
+
+/**--------------------------------------------------------------------------**/
+/*
+    数据类型
+        数字 1,2,13,10px
+        字符串，有引号字符串与无引号字符串,'taiqianqing'
+        颜色,
+        布尔类型
+        空值 null
+        数组 (list)，用空格或逗号作分隔符，1.5em 1em 0 2em, Helvetica, Arial, sans-serif
+        maps, 相当于 JavaScript 的 object，(key1: value1, key2: value2)
+
+*/
+/**字符串中的特殊典例**/
+/*在mixin混合器中使用*/
+/********数组类型********/
+/*
+数组 (lists) 指 Sass 如何处理 CSS 中 margin: 10px 15px 0 0 或者 font-face: Helvetica, Arial, sans-serif 这样通过空格或者逗号分隔的一系列的值。事实上，独立的值也被视为数组 —— 只包含一个值的数组。
+
+数组本身没有太多功能，但 Sass list functions 赋予了数组更多新功能：nth 函数可以直接访问数组中的某一项；join 函数可以将多个数组连接在一起；append 函数可以在数组中添加新值；而 @each 指令能够遍历数组中的每一项。
+*/
+/***典例数组中包含子数组
+10px 20px,11px 11px  子数组内的元素用空格隔开，子数组用逗号隔开
+(10px 20px) (11px 11px) 内外两层数组使用相同分隔符，就用空格隔开
+用 () 表示不包含任何值的空数组（在 Sass 3.3 版之后也视为空的 map）。空数组不可以直接编译成 CSS，比如编译 font-family: () Sass 将会报错
+如果数组中包含空数组或空值，编译时将被清除，比如 1px 2px () 3px 或 1px 2px null 3px。
+
+(1 2 3,) 包含以空格区分的数组的数组 
+****/
+/**--------------------------------------------------------------------------**/
+/*****运算(operations)*******/
+/*所有数据类型均支持相等运算==或!=*/
+/**********数字运算***********/
+p {
+  width: 17.5pt; }
+
+/*********除法运算******/
+/*
+1. 如果值，或值的一部分，是变量或者函数的返回值
+2. 如果值被圆括号包裹
+3. 如果值是算数表达式的一部分
+**/
+p {
+  width: 200px;
+  width: 1;
+  width: 250px;
+  width: 34px; }
+
+p {
+  height: 10px/20px; }
+
+/***颜色值运算***/
+/*******字符串运算*************/
+p {
+  cursor: "love-resize"; }
+
+p {
+  margin: 7px auto; }
+
+p::before {
+  content: "呵呵9呵额"; }
+
+/******************布尔运算****************/
+/**************数组不支持运算***************/
+/***-----------------------------------------------------------------*******/
+/************************圆括号Parentheses********************/
+/*****函数******/
+/****************插入语句**********/
+/****变量定义!default*****/
+#main {
+  content: blue; }
+
+/*******控制指令*******/
+p {
+  border-width: 1px;
+  border-color: red;
+  border-style: solid;
+  border: 0; }
+
+itme-0 {
+  width: 0em; }
+
+itme-1 {
+  width: 2em; }
+
+itme-2 {
+  width: 4em; }
+
+itme-3 {
+  width: 6em; }
+
+.aa-icon {
+  color: aa; }
+
+.bb-icon {
+  color: bb; }
+
+.vv-icon {
+  color: vv; }
+
+.dd-icon {
+  color: dd; }
+
+.pp-icon {
+  background-image: url("pp.png");
+  background-color: red;
+  width: 1px; }
+
+.jj-icon {
+  background-image: url("jj.png");
+  background-color: blue;
+  width: 2px; }
+
+.dd-icon {
+  background-image: url("dd.png");
+  background-color: green;
+  width: 3px; }
+
+.item-6 {
+  width: 12em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-2 {
+  width: 4em; }
+
+.add {
+  color: #fff; }
+
+.bb {
+  background: key1, key2, default, primary; }
+
+.red-item {
+  color: red; }
+
+.blue-item {
+  color: blue; }
+
+/*# sourceMappingURL=aa.css.map */
